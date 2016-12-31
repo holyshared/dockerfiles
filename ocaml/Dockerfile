@@ -13,4 +13,5 @@ ENV HOME /home/ocaml
 WORKDIR /home/ocaml
 USER ocaml
 RUN sudo -u ocaml sh -c "opam init -y"
-RUN sudo -u ocaml sh -c "opam install core ocamlfind camlp4"
+RUN sudo -u ocaml sh -c "opam switch 4.04.0"
+RUN sudo -u ocaml sh -c "opam install oasis ocamlfind camlp4"

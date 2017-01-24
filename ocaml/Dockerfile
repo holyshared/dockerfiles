@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+FROM ubuntu:16.10
+ENV DEBIAN_FRONTEND noninteractive
 MAINTAINER Noritaka Horio <holy.shared.design@gmail.com>
 RUN apt-get -y update
 RUN apt-get -y install sudo m4 opam

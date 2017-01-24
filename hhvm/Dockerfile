@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+ENV DEBIAN_FRONTEND noninteractive
 MAINTAINER Noritaka Horio <holy.shared.design@gmail.com>
 RUN apt-get -y update
 RUN apt-get -y install software-properties-common

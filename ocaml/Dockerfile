@@ -1,4 +1,4 @@
-FROM ubuntu:16.10
+FROM ubuntu:16.04
 ENV DEBIAN_FRONTEND noninteractive
 MAINTAINER Noritaka Horio <holy.shared.design@gmail.com>
 RUN apt-get -y update
@@ -14,5 +14,5 @@ ENV HOME /home/ocaml
 WORKDIR /home/ocaml
 USER ocaml
 RUN sudo -u ocaml sh -c "opam init -y"
-RUN sudo -u ocaml sh -c "opam switch 4.04.0"
+RUN sudo -u ocaml sh -c "opam switch 4.04.1"
 RUN sudo -u ocaml sh -c "opam install oasis ocamlfind camlp4"
